@@ -91,8 +91,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-montserrat)", "sans-serif"],
-        display: ["var(--font-playfair)", "serif"],
+        Manrope: ["Manrope", "sans-serif"],
       },
       animation: {
         fadeIn: "fadeIn 1s ease-in-out",
