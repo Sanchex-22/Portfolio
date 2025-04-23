@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.457);
+    backdrop-filter: blur(10px);
+  }
+  
+  .bg1-black{
+    background-color: black;
+  }
+
+  .sidebar-blur {
+    background-color: rgba(0, 0, 0, 0.457);
+    backdrop-filter: blur(10px);
+  }
