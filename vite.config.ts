@@ -8,6 +8,16 @@ export default defineConfig({
     sourcemap: true,
     outDir: 'dist', // Esto asegura que los archivos construidos se coloquen en la carpeta dist
     target: 'es2020', // Asegúrate de que la salida sea compatible con Cloudflare Workers
-    minify: true
+    minify: true,
+    rollupOptions: {
+      output: {
+        format: 'esm',
+      },
+    },
+  },
+  resolve: {
+    alias: {
+      '@assets': '/src/assets',
+    },
   },
 })
