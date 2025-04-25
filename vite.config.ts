@@ -1,9 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { cloudflare } from "@cloudflare/vite-plugin";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(),cloudflare()],
+  define: {
+    'process.env': process.env,
+  },
   build: {
     sourcemap: true,
     outDir: 'dist', // Esto asegura que los archivos construidos se coloquen en la carpeta dist
