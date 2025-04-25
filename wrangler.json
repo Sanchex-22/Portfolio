@@ -9,10 +9,8 @@
       "directory": "./dist"
     },
     "env": {
-      // Variables de entorno que se pueden utilizar en Cloudflare Workers
       "MY_API_KEY": "your_api_key_here",
       "VITE_API_URL": "localhost:3000"
-      // Puedes agregar más variables de entorno aquí
     }
   }
   
