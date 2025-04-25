@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from 'react';
-import { authServices } from '../services/authentication.mjs';
+import { authServices } from '../services/authentication.js';
 
 // Define types for the context value
 interface UserContextValue {

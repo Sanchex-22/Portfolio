@@ -1,6 +1,6 @@
 // UserProfileContext.tsx
 import React, { ReactNode, useState, useMemo } from 'react';
-import { authServices } from '../services/authentication.mjs';
+import { authServices } from '../services/authentication.js';
 import { decodeTokenPublic } from '../utils/decode';
 
 // Interfaz para los metadatos decodificados
