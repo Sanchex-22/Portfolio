@@ -1,6 +1,7 @@
 "use client";
 
 import { Circle, Download, Play, Plus } from "lucide-react";
+import GlitchText from "../../../../components/color/textGlitch";
 
 interface BannerProps {
   title?: string;
@@ -11,7 +12,7 @@ interface BannerProps {
 
 export default function Banner({
   title = "Carlos Sanchez",
-  description = "Software Developer",
+  // description = "Software Developer",
   buttonText = "My CV",
   buttonHref = "#services",
 }: BannerProps) {
@@ -36,9 +37,7 @@ export default function Banner({
             <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               {title}
             </h1>
-            <p className="mb-8 max-w-md text-2xl leading-relaxed text-gray-300 md:text-4xl">
-              {description}
-            </p>
+            <GlitchText/>
               <a
                 href={buttonHref}
                 className="group inline-flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-md font-semibold text-white shadow-md transition-all duration-300 hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 w-28"

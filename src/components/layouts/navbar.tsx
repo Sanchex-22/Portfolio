@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPathname, isLogged, profile }) =
   return (
     <nav
       id="navbar"
-      className={`w-full fixed z-20 transition-all duration-500 bg-white/95 backdrop-blur-sm border-b border-gray-100 ${
+      className={`text-transition w-full fixed z-20 transition-all duration-500 bg-white/95 backdrop-blur-sm border-b border-gray-100 ${
         currentPathname.name === "/" ? "shadow-sm" : ""
       }`}
     >
@@ -84,8 +84,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPathname, isLogged, profile }) =
                     key={index}
                     href={link.href}
                     className={`relative py-2 text-base font-medium transition-colors
-                      after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full
-                      ${isActive(link.href) ? "text-gray-900 after:w-full" : "text-gray-600 hover:text-gray-900"}`}
+                      after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-violet-600 after:transition-all after:duration-300 hover:after:w-full
+                      ${isActive(link.href) ? "text-gray-900 after:w-full" : "text-gray-600 hover:text-violet-600"}`}
                   >
                     {link.name}
                   </a>
