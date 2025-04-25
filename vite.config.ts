@@ -14,6 +14,9 @@ export default defineConfig({
     target: 'es2020', // Asegúrate de que la salida sea compatible con Cloudflare Workers
     minify: true,
   },
+  optimizeDeps: {
+    exclude: ['axios', 'form-data', 'follow-redirects'], // Excluir dependencias de Node.js no compatibles
+  },
   resolve: {
     alias: {
       '@assets': '/src/assets',

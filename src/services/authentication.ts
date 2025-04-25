@@ -1,6 +1,6 @@
 import axios from "axios";
 import { decodeToken, Token } from "../utils/decode";
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = process.env.VITE_API_URL;
 export class authServices {
   static async login(email: string, password: string) {
     return await axios.post(API_URL + "/api/user/auth/login", { email, password })
