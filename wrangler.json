@@ -3,7 +3,7 @@
     "compatibility_date": "2025-04-25",
     "main": "src/main.tsx",
     "build": {
-      "command": "npm run build"
+      "command": "npm run deploy"
     },
     "assets": {
       "directory": "./dist"
