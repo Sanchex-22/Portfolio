@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { cloudflare } from "@cloudflare/vite-plugin";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(),cloudflare()],
   define: {
@@ -10,12 +9,12 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
-    outDir: 'dist', // Esto asegura que los archivos construidos se coloquen en la carpeta dist
-    target: 'es2020', // Asegúrate de que la salida sea compatible con Cloudflare Workers
+    outDir: 'dist',
+    target: 'es2020',
     minify: true,
   },
   optimizeDeps: {
-    exclude: ['axios', 'form-data', 'follow-redirects'], // Excluir dependencias de Node.js no compatibles
+    exclude: ['axios', 'form-data', 'follow-redirects'],
   },
   resolve: {
     alias: {
