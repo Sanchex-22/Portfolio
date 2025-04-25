@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useState } from 'react';
 import Context from '../context/userContext';
-import { authServices } from '../services/authentication';
+import { authServices } from '../services/authentication.mjs';
 
 // Define types for the context value and hook return type
 interface UserContextValue {
